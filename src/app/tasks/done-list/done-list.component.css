@@ -1,0 +1,4 @@
+.task-item{
+    cursor: pointer;
+    text-decoration: line-through;
+}

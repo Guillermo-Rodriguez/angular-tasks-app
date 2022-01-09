@@ -1,0 +1,12 @@
+<div class="card" *ngIf="task.length !== 0">
+    <div class="card-body">
+        <h3>Incompleted Tasks</h3>
+
+        <ul>
+            <li *ngFor="let task of task" class="task-item mb-2" (click)="markAsDone( task )">
+                {{ task.desc }}
+            </li>
+        </ul>
+
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="card mt-5" *ngIf="taskDone.length !== 0 ">
+    <div class="card-body">
+        <h3>Completed Tasks</h3><small>(Click to delete)</small>
+
+        <ul>
+            <li *ngFor="let task of taskDone" class="task-item mb-2" (click)="deleteTask( task )">
+                {{ task.desc }}
+            </li>
+        </ul>
+
+    </div>
+</div>
