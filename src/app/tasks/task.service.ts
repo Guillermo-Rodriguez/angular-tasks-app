@@ -6,11 +6,7 @@ import { Task } from '../interfaces/task.interface';
 })
 export class TaskService {
 
-  private _task: Task[] = [{
-    id: new Date().getTime(),
-    desc: 'First',
-    done: false
-  }];
+  private _task: Task[] = [];
 
   private _taskDone: Task[] = [];
 
